@@ -30,7 +30,7 @@
 
 </div>
 
-## 📲 (이름미정) 사용 설명서
+## 📲 혼잡옵서예 사용 설명서
 
 </div>
 
@@ -46,25 +46,26 @@
 [🛠 main_dev](https://github.com/Winter-Toy-Project/Winter-Toy-Project): main
 
 
-## 🗝️(이름미정) 실행순서
+## 🗝️혼잡옵서예 실행순서
 
 - 작성
 
 ## 🦉 팀 소개 및 역할
 
-1.👨🏾‍💻 박준용
+1.🧑🏻‍💻 최병우
+
+- Position : 팀장
+- Github: <https://github.com/cbw6088>
+- Email : khj4186@naver.com
+- Role : TeamLeader, App, UI design, Backend
+
+2.👨🏾‍💻 박준용
 
 - Position : 팀원
 - Github: <https://github.com/junyong1111>
 - Email : jypark93@kookmin.ac.kr
-- Role
+- Role : AI, Backend
 
-2.🧑🏻‍💻 최병우
-
-- Position : 팀원
-- Github: <https://github.com/cbw6088>
-- Email : khj4186@naver.com
-- Role
 
 
 

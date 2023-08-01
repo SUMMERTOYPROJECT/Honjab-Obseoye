@@ -43,10 +43,10 @@
 ✨ 브랜치 링크를 누르면 각 브랜치 실행 방법을 확인 할 수 있습니다.
 
 
-[🛠 main_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye): main
-[🛠 App_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/App): App
-[🛠 AI_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/datasicence): AI
-[🛠 Database_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye): DataBase (예정)
+[🛠 main_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye): main  
+[🛠 App_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/App): App  
+[🛠 AI_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/datasicence): AI  
+[🛠 Database_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye): DataBase (예정)  
 
 
 ## 🗝️혼잡옵서예 실행순서

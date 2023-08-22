@@ -1,0 +1,5 @@
+Flask==2.3.2
+numpy==1.25.2
+opencv-contrib-python==4.5.1.48
+websockets==11.0.3
+

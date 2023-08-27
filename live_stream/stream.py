@@ -18,7 +18,11 @@ def GenerateFrames():
             frame = buffer.tobytes()  # 인코딩된 이미지를 바이트 스트림으로 변환합니다.
             # multipart/x-mixed-replace 포맷으로 비디오 프레임을 클라이언트에게 반환합니다.
             yield (b'--frame\r\n'
-                   b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+                    b'Content-Type:image/jpeg\r\n'
+                    b'Content-Length: ' + f"{len(frame)}".encode() + b'\r\n'
+                    b'\r\n' + frame + b'\r\n')
+            # yield (b'--frame\r\n'
+            #        b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
 @app.route('/')
 def Index():
@@ -31,4 +35,5 @@ def Stream():
 
 if __name__ == "__main__":
     # 라즈베리파이의 IP 번호와 포트 번호를 지정하여 Flask 앱을 실행합니다.
-    app.run(host="192.168.0.19", port="8080")
+    # app.run(host="172.16.101.92", port="8080")
+    app.run(host='0.0.0.0', port = "8080", debug=True)

@@ -4,6 +4,7 @@ import time
 import cv2, base64
 
 portNum = 6000
+URL = "자신의 IP URL"
 print("Started server on port : ", portNum)
 
 async def StreamServe(websocket, path):
@@ -11,7 +12,7 @@ async def StreamServe(websocket, path):
     try :
         global cap
         # 라즈베리파이의 http 스트리밍 영상 URL을 넣으세요.
-        cap = cv2.VideoCapture('URL')
+        cap = cv2.VideoCapture(URL)
 
         while cap.isOpened():
             time.sleep(0.1)

@@ -8,35 +8,37 @@
 
 **👀 혼잡옵서예(인구 밀집도(혼잡도) 시각화)**
 
-**💻 개발 배경**
 
-- 현대 사회에서는 공공 장소, 상업 시설, 교통 시설 등 다양한 장소에서 인원 관리와 혼잡도 파악이 매우 중요합니다. 특히, 인구 밀집 지역이나 이벤트 장소에서는 인원이 과도하게 몰리면 안전상의 이유로 인한 문제가 발생할 수 있습니다. 이에 따라 인원 관리를 효과적으로 수행하고 혼잡도를 실시간으로 파악할 수 있는 시스템이 필요해졌습니다.
+## 🗝️혼잡옵서예 라이브 스트리밍 실행순서
 
-**📌 개발 목적**
+### 가상환경 셋팅 또는 requirements.txt 설치
+- source stream/bin/activate
+- pip install -r requirements.txt  
+둘 중 원하는걸로 
 
-- 기존의 수동적이고 주관적인 인원 관리 방식에서 벗어나, 자동화된 시스템을 통해 효율적으로 인원을 관리할 수 있습니다. 영상 분석과 인공지능 기술을 활용하여 정확한 인원 식별과 카운팅을 수행하고, 실시간으로 인원 정보를 제공합니다.
+### 라이브 스트리밍 실행
 
-- 현장의 혼잡도를 실시간으로 파악함으로써, 인원이 과도하게 몰리는 상황을 미리 예측하고 대응할 수 있습니다. 이를 통해 인원이 안전하고 편안한 환경에서 이동하고 대기할 수 있도록 도움을 줍니다.
+- live_stream/stream.py 자신의 IP주소를 입력
+- python stream.py를 이용하여 라이브 스트리밍 실행
 
-- 시스템은 잠재적인 위험 상황을 빠르게 감지하고 관련된 알림을 제공합니다. 예를 들어, 인원이 너무 많이 몰려 혼잡도가 위험 수준에 도달하거나, 출입 제한 구역에 불법적인 침입이 발생하는 경우 등을 탐지하여 조기 대응 조치를 취할 수 있습니다.
-
-- IP 카메라를 통해 제공되는 고화질 영상과 영상 분석 결과를 통해 정확한 데이터와 실시간 정보를 제공합니다. 이는 의사 결정에 필요한 정보를 제공하고, 관리자와 관련자들이 실시간으로 상황을 모니터링하고 대응할 수 있도록 돕습니다
-
-
-## 🎬프로젝트 시연 동영상
-
- <div align="center">
+### 라이브 영상을 websocket 통신으로 데이터 변환
+- stream_to_app.py에 라이브 스트리밍 URL 입력
+- python stream_to_app.py 실행
+    - IP카메라 스트리밍 -> 스트리밍 데이터를 변환 후 -> 다시 웹 소켓 통신
 
 
-</div>
 
-## 📲 혼잡옵서예 사용 설명서
 
-</div>
 
-## 🔎시스템 구성도
+# Raspberry_monitoring
 
-- 작성 필요
+[🛠 0. 라즈베리파이 초기 셋팅](https://github.com/junyong1111/Raspberry_monitoring/tree/main/rasp_live/setting_0) 
+
+[🛠 1. 라즈베리파이 OpenCV 설치](https://github.com/junyong1111/Raspberry_monitoring/tree/main/rasp_live/setting_1) 
+
+[🛠 2. 실시간 웹캠 스트리밍 with Flask](https://github.com/junyong1111/Raspberry_monitoring/tree/main/rasp_live/live_stream) 
+
+[🛠 3. 포트포워딩을 이용하여 외부 접속](https://github.com/junyong1111/Raspberry_monitoring/tree/main/rasp_live/port_forwarding) 
 
 ## 📂브랜치별 개요 및 링크
 
@@ -49,9 +51,11 @@
 [🛠 streaming ](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/streaming): Raspberry Live Streaming  
 [🛠 Database_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye): DataBase (예정)  
 
+
+
+
 ## 🗝️혼잡옵서예 실행순서
 
-- 작성
 
 ## 🦉 팀 소개 및 역할
 

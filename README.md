@@ -28,8 +28,6 @@
 
 
 
-
-
 # Raspberry_monitoring
 
 [🛠 0. 라즈베리파이 초기 셋팅](https://github.com/junyong1111/Raspberry_monitoring/tree/main/rasp_live/setting_0) 
@@ -47,14 +45,28 @@
 
 [🛠 main_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye): main  
 [🛠 App_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/App): App  
-[🛠 AI_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/datasicence): AI  
+[🛠 AI_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/Ai): AI  
 [🛠 streaming ](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/streaming): Raspberry Live Streaming  
 [🛠 Database_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye): DataBase (예정)  
 
 
+<img width="798" alt="스크린샷 2023-08-28 오후 6 38 14" src="https://github.com/Winter-Toy-Project/Honjab-Obseoye/assets/79856225/80acb481-bcdf-4c3d-8fa5-1df57fb591dc">
 
 
-## 🗝️혼잡옵서예 실행순서
+## 🔍 파일 구조
+
+```
+…
+|— live_stream
+    └── templates
+        └── index.html
+    └── stream.py
+|— stream
+    └── bin...
+|— requirements.txt
+|— stream_to_app.py
+…
+```
 
 
 ## 🦉 팀 소개 및 역할

@@ -124,30 +124,17 @@ Firebase.initializeApp();                                   // Firebase서비스
 ```
 - 실시간 스트리밍
 ```dart
+/* 데이터스트림을 보며 데이터가 업데이트 될 때 마다 UI를 자동 렌더링 */
 StreamBuilder<DocumentSnapshot>(
+    /* 데이터베이스의 해당 문서가 변경될 때마다 앱으로 스냅샷이 전송되어 업데이트를 수신 */
     stream: FirebaseFirestore.instance.collection('users').doc('crowd').snapshots(),
     builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
-        return CircularProgressIndicator();
+        if (snapshot.connectionState == ConnectionState.waiting) { // 데이터가 아직 없으면
+        return CircularProgressIndicator();                        // 로딩중인 화면을 나타냄
         }
+        String imageUrl = snapshot.data['ori_fileUrl'];            // 스냅샷 데이터에서 이미지URL 가져오기 
 
-        if (!snapshot.hasData || snapshot.data == null) {
-        return Text("No data available");
-        }
-
-        String imageUrl = isOn
-            ? (snapshot.data?['fidt_fileUrl']) ?? ''
-            : (snapshot.data?['ori_fileUrl']) ?? '';
-
-        return imageUrl.isNotEmpty
-            ? Image.network(
-        imageUrl,
-        width: 380,
-        height: 220,
-        fit: BoxFit.contain,
-        )
-            : CircularProgressIndicator();
+        return imageUrl.network(imageUrl)                          // 이미지URL 보여주기
     },
 ),
 ```
-Test

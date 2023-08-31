@@ -45,7 +45,6 @@
 [🛠 App_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/App): App  
 [🛠 AI_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/Ai): AI  
 [🛠 streaming ](https://github.com/Winter-Toy-Project/Honjab-Obseoye/tree/streaming): Raspberry Live Streaming  
-[🛠 Database_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye): DataBase (예정)  
 
 ## 🗝️혼잡옵서예 실행순서
 

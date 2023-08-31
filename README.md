@@ -72,9 +72,11 @@ myfirebaseservicyKey
 python people_counting.py --pre ./model_best_nwpu.pth  --video_path "IP카메라 URL"
 ```
 
-![counting2](https://github.com/Winter-Toy-Project/Honjab-Obseoye/assets/79856225/37d96356-8ba5-4d8d-9e01-a7c89333e3c3)
+![image](https://github.com/TEAMA0520/Honjab-Obseoye/assets/79856225/35ed20f5-187e-4b45-bd27-942d04c900ba)
 
-![fidt2](https://github.com/Winter-Toy-Project/Honjab-Obseoye/assets/79856225/d7e48a26-c13b-4245-b954-2c0eed249354)
+
+![image](https://github.com/TEAMA0520/Honjab-Obseoye/assets/79856225/ca2f4e24-5ada-42f7-b24b-72894b692a3a)
+
 
 #-- 참고 링크 : https://github.com/dk-liang/FIDTM.git 
 </div>

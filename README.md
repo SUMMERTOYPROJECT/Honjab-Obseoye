@@ -24,6 +24,8 @@
 ## 🎬프로젝트 시연 동영상
 
  <div align="center">
+ 
+ [![Video Label](https://img.youtube.com/vi/XoG1P_lgCXY/0.jpg)](https://youtu.be/XoG1P_lgCXY)
 
 
 </div>

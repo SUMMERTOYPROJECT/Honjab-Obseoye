@@ -115,6 +115,7 @@ flutter pub get
 - 위 코드를 복사하여 main 함수에 붙여넣기 
 - main에 WidgetsFlutterBinding.ensureInitialized(); 코드 추가
 - awit이 붙어있으므로 main() async 
+
 ```shell
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';

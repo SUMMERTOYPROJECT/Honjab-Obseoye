@@ -50,7 +50,8 @@
 [🛠 Database_dev](https://github.com/Winter-Toy-Project/Honjab-Obseoye): DataBase (예정)  
 
 
-<img width="798" alt="스크린샷 2023-08-28 오후 6 38 14" src="https://github.com/Winter-Toy-Project/Honjab-Obseoye/assets/79856225/80acb481-bcdf-4c3d-8fa5-1df57fb591dc">
+<img width="630" alt="스크린샷 2023-09-07 오후 3 49 56" src="https://github.com/TEAMA0520/Honjab-Obseoye/assets/79856225/c2d29f57-9b3b-4d14-a1ae-591155c150f4">
+
 
 
 ## 🔍 파일 구조

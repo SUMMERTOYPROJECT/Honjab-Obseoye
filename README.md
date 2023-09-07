@@ -64,7 +64,30 @@
 
 ## 🗝️혼잡옵서예 실행순서
 
-- 작성
+0. 레포지토리 다운로드
+
+```shell
+git clone https://github.com/TEAMA0520/Honjab-Obseoye.git
+```
+
+1. Firebase 프로젝트 생성
+
+- 프로그램을 실행하기 전, [공식문서](https://firebase.google.com/)에 따라 Firebase 프로젝트를 생성하고 초기 설정 작업을 진행합니다. `※ 아래 설치과정에서 Firebase 관련 내용들은 본인의 Firebase 프로젝트 정보에 맞게 설정해주세요!`
+
+2. 영상 스트리밍 실행
+
+- [streaming](https://github.com/TEAMA0520/Honjab-Obseoye/tree/streaming) 브랜치에서 READMA.md의 실행방법에 따라 프로그램을 실행합니다.
+
+
+
+3. AI 인공지능 서버 실행
+
+- [Ai](https://github.com/TEAMA0520/Honjab-Obseoye/tree/Ai) 브랜치에서 READMA.md의 실행방법에 따라 프로그램을 실행합니다.
+
+
+4. 애플리케이션 실행
+
+- [App](https://github.com/TEAMA0520/Honjab-Obseoye/tree/App) 브랜치에서 READMA.md의 실행방법에 따라 프로그램을 실행합니다.
 
 ## 🦉 팀 소개 및 역할
 

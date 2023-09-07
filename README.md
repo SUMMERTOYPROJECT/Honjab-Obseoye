@@ -55,6 +55,81 @@
 ...
 ```
 
+**🎮 Firebase 연동**
+
+1. 자신의 OS에 맞게 CLI설치 [
+[공식문서](https://firebase.google.com/docs/cli?authuser=1&hl=ko#install_the_firebase_cli)]
+- Mac의 경우 터미널에서 다음과 같은 명령어를 수행
+    ```shell
+    curl -sL https://firebase.tools | bash
+    ```
+ - 설치가 완료되었다면 터미널에서 firebase 로그인
+    ```shell
+    firebase login
+    ```
+- 제대로 로그인 되었는지 확인
+    ```shell
+    firebase projects:list
+    ```
+
+2. 프로젝트 생성 후 Flutter app 추가 후 다음 실행
+<img width="562" alt="image" src="https://github.com/TEAMA0520/Honjab-Obseoye/assets/99342700/59b61916-bd1d-4557-938e-75d59e89dd32">
+
+3. 홈 디렉토리에서 다음 명령어 실행
+```shell
+dart pub global activate flutterfire_cli
+```
+- 위 명령어를 수행시 환경변수를 설정하라는 문구가 나올 때가 있다.  아래 명령어로 설정 파일 수정
+```shell
+cd
+vi .zshrc
+```
+
+-  다음과 같은 코드를 추가하여 환경변수를 추가 해준다. 이 때 터미널을 껐다 켜준다 → 안된다면 재부팅
+```shell
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+```
+
+4. 모두 완료되었다면 프로젝트 디렉토리로 이동한 후 다음 명령어 수행
+```shell
+flutterfire configure --"자신의 프로젝트"
+```
+<img width="563" alt="image" src="https://github.com/TEAMA0520/Honjab-Obseoye/assets/99342700/40f55898-73c2-44b3-a330-0cee93e2e5c8">
+- 원래는 수동으로 추가했어야하는 부분들이 자동으로 추가되어있다.
+
+5. 플러터 프로젝트를 확인해보면 firebase가 추가되어있다.
+    - 자신이 만들고싶은 부분만 체크하고 엔터 후 y
+<img width="564" alt="image" src="https://github.com/TEAMA0520/Honjab-Obseoye/assets/99342700/7b0da949-a5c3-4a0c-bcd6-cb7d33a73313">
+
+6. firebase_core 추가
+```shell
+flutter pub add firebase_core
+```
+```shell
+flutter pub get
+// 위 명령어로 firebase 추가
+```
+
+7. main에 코드 추가
+<img width="561" alt="image" src="https://github.com/TEAMA0520/Honjab-Obseoye/assets/99342700/7a6dd0e2-3bbe-4839-a1d1-6c247d9dbb73">
+- 위 코드를 복사하여 main 함수에 붙여넣기 
+- main에 WidgetsFlutterBinding.ensureInitialized(); 코드 추가
+- awit이 붙어있으므로 main() async 
+```shell
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(MyApp());
+}
+```
+- 실행을 눌러서 오류없이 실행이 된다면 firebase추가 완료 
+
 **🎤 어플리케이션 이미지**
 
 1. 개인 e-mail을 이용하여 로그인 후 등록된 IP주소의 혼잡도 정보를 전달 받는다.
